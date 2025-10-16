@@ -9,19 +9,28 @@ def test_status():
     lost = Status.Lost()
     state_change = Status.StateChanged()
     err = Status.Error()
+    resumed = Status.Resumed()
 
     assert lost == Status.Lost()
     assert state_change == Status.StateChanged()
     assert err == Status.Error()
+    assert resumed == Status.Resumed()
     assert lost != state_change
     assert lost != err
     assert lost != Status_.Lost
+    assert lost != resumed
     assert state_change != err
     assert state_change != lost
     assert state_change != Status_.StateChanged
+    assert state_change != resumed
     assert err != lost
     assert err != state_change
     assert err != Status_.Error
+    assert err != resumed
+    assert resumed != lost
+    assert resumed != state_change
+    assert resumed != err
+    assert resumed != Status_.Resumed
 
     status = Status.__private_new__(Status_.Lost, "lost")
     assert status == Status.Lost()

@@ -4,13 +4,10 @@ exclude_lines =
     @abc.abstractmethod
 
     def __repr__
-    if TYPE_CHECKING:
 
     pragma: no cover
 
-    TracingInitWithFile
-
 [run]
 omit =
-    pyautd3_link_ethercrab/native_methods/autd3capi_link_ethercrab.py
+    pyautd3_link_ethercrab/native_methods/autd3_capi_link_ethercrab.py
     pyautd3_link_ethercrab/native_methods/__init__.py
