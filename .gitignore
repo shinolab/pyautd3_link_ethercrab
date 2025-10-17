@@ -137,11 +137,9 @@ dmypy.json
 .vscode/
 
 pyautd3_link_ethercrab/bin/
-pyautd3_link_ethercrab/LICENSE.txt
-pyautd3_link_ethercrab/ThirdPartyNotices.txt
 setup.cfg
 VERSION
 *.zip
 *.tar.gz
-
 *.pyi
+*.txt

@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/shinolab/pyautd3_link_ethercrab/graph/badge.svg?precision=2)](https://codecov.io/gh/shinolab/pyautd3_link_ethercrab)
 [![PyPI version](https://img.shields.io/pypi/v/pyautd3_link_ethercrab)](https://pypi.org/project/pyautd3_link_ethercrab/)
 
-[autd3-link-ethercrab](https://github.com/shinolab/autd3-link-ethercrab) library for python3.11+
+[autd3-link-ethercrab](https://github.com/shinolab/autd3-rs) wrapper library for python3.11+
 
 ## Install
 
@@ -18,7 +18,9 @@ see [example](./example)
 
 ## LICENSE
 
-See [LICENSE](./LICENSE) and [ThirdPartyNotice](./ThirdPartyNotices.txt).
+MIT
+
+This library depends on some third-party libraries. Please check their licenses in the `ThirdPartyNotices.txt` in the distributed package.
 
 # Author
 
