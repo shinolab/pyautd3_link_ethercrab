@@ -11,7 +11,7 @@ from pyautd3_link_ethercrab.native_methods.autd3_capi_link_ethercrab import Ethe
 from pyautd3_link_ethercrab.native_methods.autd3_capi_link_ethercrab import NativeMethods as LinkEtherCrab
 from pyautd3_link_ethercrab.native_methods.autd3_capi_link_ethercrab import Status as Status_
 
-ErrHandlerFunc = ctypes.CFUNCTYPE(None, ctypes.c_void_p, ctypes.c_uint32, ctypes.c_uint8)  # type: ignore[arg-type]
+ErrHandlerFunc = ctypes.CFUNCTYPE(None, ctypes.c_void_p, ctypes.c_uint32, ctypes.c_uint8)
 
 
 class Status(metaclass=ConstantADT):
@@ -108,7 +108,7 @@ class EtherCrab(Link):
 
         return _validate_ptr(  # pragma: no cover
             LinkEtherCrab().link_ether_crab(
-                self._err_handler_f,  # type: ignore[arg-type]
+                self._err_handler_f,  # type: ignore[bad-argument-type]
                 ctypes.c_void_p(0),
                 self._option._inner(),
             ),
